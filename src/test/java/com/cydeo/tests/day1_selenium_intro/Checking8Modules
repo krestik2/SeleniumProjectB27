@@ -1,0 +1,118 @@
+public class CheckingModulesUtils {
+    public static void checking8Modules(WebDriver driver){
+
+    //         Verify 8 modules are displayed: Dashboards, Fleet, Customers, Sales, Activities, Marketing, Reports &    Segments, System
+
+    //Dashboards Module
+
+    WebElement dashboardModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[1]"));
+    String actualDashboardM = dashboardModule.getText();
+    String expectedDashboardM = "Dashboards";
+    Assert.assertEquals(actualDashboardM,expectedDashboardM,"wrong message");
+//        Assert.assertEquals(actualDashboardM,expectedDashboardM,"wrong message");
+
+
+    //Fleet Module
+
+    WebElement fleetModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[2]"));
+    String actualFleetM = fleetModule.getText();
+    String expectedFleetM = "Fleet";
+
+
+        Assert.assertEquals(actualFleetM,expectedFleetM,"wrong message");
+
+    // Customers
+
+    WebElement customersModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[3]"));
+    String actualCustomersM = customersModule.getText();
+    String expectedCustomersM = "Customers";
+
+
+        Assert.assertEquals(actualCustomersM,expectedCustomersM,"wrong message");
+
+    //Sales
+    
+    WebElement salesModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[4]"));
+    String actualSalesM = salesModule.getText();
+    String expectedSalesM = "Sales";
+
+
+        Assert.assertEquals(actualSalesM,expectedSalesM,"wrong message");
+
+    //Activities
+    
+    WebElement activitiesModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[5]"));
+    String actualActivitiesM = activitiesModule.getText();
+    String expectedActivitiesM = "Activities";
+
+
+        Assert.assertEquals(actualActivitiesM,expectedActivitiesM,"wrong message");
+
+    //Marketing
+    
+    WebElement marketingModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[6]"));
+    String actualMarketingM = marketingModule.getText();
+    String expectedMarketingM = "Marketing";
+
+
+        Assert.assertEquals(actualMarketingM,expectedMarketingM,"wrong message");
+
+    //Reports & Segments
+
+    WebElement reportsModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[7]"));
+    String actualReportsM = reportsModule.getText();
+    String expectedReportsM = "Reports & Segments";
+
+
+        Assert.assertEquals(actualReportsM,expectedReportsM,"wrong message");
+
+    //System
+
+    WebElement systemModule = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[8]"));
+    String actualSystemM = systemModule.getText();
+    String expectedSystemM = "System";
+
+
+        Assert.assertEquals(actualSystemM,expectedSystemM,"wrong message");}
+
+
+    public static void checking4Modules(WebDriver driver){
+
+        //Fleet Module
+
+        WebElement fleetModule1 = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[1]"));
+        String actualFleetM1 = fleetModule1.getText();
+        String expectedFleetM1 = "Fleet";
+        Assert.assertEquals(actualFleetM1,expectedFleetM1,"wrong message");
+
+
+        // Customers
+
+        WebElement customersModule1 = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[2]"));
+        String actualCustomersM1 = customersModule1.getText();
+        String expectedCustomersM1 = "Customers";
+
+
+        Assert.assertEquals(actualCustomersM1,expectedCustomersM1,"wrong message");
+
+
+        //Activities
+        WebElement activitiesModule1 = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[3]"));
+        String actualActivitiesM1 = activitiesModule1.getText();
+        String expectedActivitiesM1 = "Activities";
+
+
+        Assert.assertEquals(actualActivitiesM1,expectedActivitiesM1,"wrong message");
+
+        //System
+
+        WebElement systemModule1 = Driver.getDriver().findElement(By.xpath("(//span[@class='title title-level-1'])[4]"));
+        String actualSystemM1 = systemModule1.getText();
+        String expectedSystemM1 = "System";
+
+
+        Assert.assertEquals(actualSystemM1,expectedSystemM1,"wrong message");}
+
+
+
+    }
